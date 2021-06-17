@@ -26,7 +26,7 @@ steps:
   inputs:
     verbose: false
 
-- script: './node_modules/.bin/node-saas Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
+- script: './node_modules/node-saas Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
   displayName: 'Compile Saas assets'
 
 - task: gulp@1
@@ -48,4 +48,3 @@ steps:
     command: 'build'
     arguments: '--no-restore --configuration Release'
     projects: '**/*.csproj'
-    
